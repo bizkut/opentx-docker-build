@@ -22,6 +22,17 @@ tts_languages = {
     "pt"
 }
 
+options_i6x = {
+    "heli": ("HELI", "NO", "YES"),
+    "ppmus": ("PPM_UNIT", "US", "PERCENT_PREC1"),
+    "gvars": ("GVARS", "YES", "NO"),
+    "lua": ("LUA", "NO", "NO_MODEL_SCRIPTS"),
+    "nographics": ("GRAPHICS", "NO", "YES"),
+    "sqt5font": ("FONT", "SQT5", None),
+    "imperial": ("UNITS", "IMPERIAL", "METRIC"),
+    "multimodule": ("MULTIMODULE", "NO", "YES")
+}
+
 
 options_sky9x = {
     "heli": ("HELI", "YES", "NO"),

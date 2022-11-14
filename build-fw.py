@@ -157,6 +157,12 @@ elif board_name == "t18":
     extra_options["PCBREV"] = "T18"
     firmware_options = options_jumper_t18
     maxsize = 2 * 1024 * 1024
+elif board_name == "i6x":
+    extra_options["PCB"] = "I6X"
+    extra_options["LUA_COMPILER"] = "NO"
+    extra_options["MULTIMODULE"] = "NO"
+    firmware_options = generic_default_options
+    maxsize = 65536 * 2
 else:
     firmware_options = generic_default_options
     print("")
