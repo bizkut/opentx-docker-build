@@ -12,11 +12,11 @@ Running the container will compile the firmware from a local source tree and pro
    
 1. Pull the container:
 
-   `docker pull vitass/opentx-fw-build`
+   `docker pull ajjjjjjjj/opentx-docker-i6x`
 
-1. Clone the OpenTX repository:
+1. Clone the OpenI6X repository:
 
-   `git clone --recursive -b 2.3 https://github.com/opentx/opentx.git`
+   `git clone --recursive -b master https://github.com/OpenI6X/opentx.git`
 
 
 ## Modify the Firmware
@@ -28,11 +28,7 @@ You have to specify a board name as first env variable (BOARD_NAME), it is lower
 ## Build the Firmware
 1. Run the container, specifying the path to the OpenTX source as a mount volume:
 
-   `docker run --rm -it -e "BOARD_NAME=board_name" -v [OpenTX Source Path]:/opentx vitass/opentx-fw-build`
-   
-   example build jumper t16 formware:
- 
-   `docker run --rm -it -e "BOARD_NAME=t16" -v "/home/vitas/github/opentx.git:/opentxtx" vitass/opentx-fw-build`
+   `docker run --rm -it -e "BOARD_NAME=I6X" -v [OpenTX Source Path]:/opentx ajjjjjjjj/opentx-docker-i6x`
 
 The compiled firmware image will be placed in the root of the source directory when the build has finished.  
 
@@ -45,6 +41,6 @@ Default flags will be replaced by the new value, additional flags will be append
 
 ### Examples
 
-1. Build from the source in `/home/vitas/opentx.git` for x10 and disable `HELI`:
+1. Build from the source in `/home/vitas/opentx.git` and disable `HELI`:
 
-   `docker run --rm -it -v "/home/vitas/opentx.git/:/opentx" -e "BOARD_NAME=x10" -e "CMAKE_FLAGS=HELI=NO" vitass/opentx-fw-build`
+   `docker run --rm -it -v "/home/vitas/opentx.git/:/opentx" -e "BOARD_NAME=i6x" -e "CMAKE_FLAGS=HELI=NO" ajjjjjjjj/opentx-docker-i6x`

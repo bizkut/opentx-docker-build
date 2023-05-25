@@ -11,7 +11,7 @@ from fwoptions import *
 
 # Show a header
 print("")
-print("The script to build opentx firmware with docker image  vitass/opentx-fw--build")
+print("The script to build opentx firmware with docker image  ajjjjjjjj/opentx-docker-i6x based on vitass/opentx-fw--build")
 print("")
 
 # Specify some paths for the build
