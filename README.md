@@ -30,7 +30,7 @@ You have to specify a board name as first env variable (BOARD_NAME), it is lower
 ## Build the Firmware
 1. Run the container, specifying the path to the OpenTX source as a mount volume:
 
-   `docker run --rm -it -e "BOARD_NAME=I6X" -v [OpenTX Source Path]:/opentx ajjjjjjjj/opentx-docker-i6x`
+   `docker run --rm -it -e "BOARD_NAME=i6x" -v [OpenTX Source Path]:/opentx ajjjjjjjj/opentx-docker-i6x`
 
 The compiled firmware image will be placed in the root of the source directory when the build has finished.  
 
