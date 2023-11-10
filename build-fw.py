@@ -283,6 +283,9 @@ output_filename = output_filename + output_extension
 output_path = os.path.join(output_dir, output_filename)
 
 # Move the new binary to the output path
+if "BOOT" in os.environ:
+    shutil.move("radio/src/targets/common/arm/stm32/bootloader/bootloader.bin", os.path.join(output_dir, "bootloader.bin"))
+
 shutil.move("firmware.bin", output_path)
 
 # Get the size of the binary

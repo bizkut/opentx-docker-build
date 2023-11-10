@@ -1,6 +1,6 @@
 # opentx-docker-build
 
-Updated to support FlySky i6X and new GCC 12.2.
+Updated to support FlySky i6X and recent GCC version.
 
 A Docker container for building firmware [OpenTX](https://github.com/opentx/opentx), 
 

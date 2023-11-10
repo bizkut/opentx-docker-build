@@ -6,10 +6,10 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get -y update && apt-get -y install wget 
 # libgtest-dev libfox-1.6-dev libsdl1.2-dev qt5-default qttools5-dev-tools qtmultimedia5-dev qttools5-dev libqt5svg5-dev
 
 # Retrieve and install the required version of the ARM compiler
-RUN wget https://developer.arm.com/-/media/Files/downloads/gnu/12.2.rel1/binrel/arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi.tar.xz -P /tmp --progress=bar:force
-RUN tar -C /tmp -xf /tmp/arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi.tar.xz
-RUN mv /tmp/arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi /opt/gcc-arm-none-eabi
-RUN rm /tmp/arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi.tar.xz
+RUN wget https://developer.arm.com/-/media/Files/downloads/gnu/13.2.rel1/binrel/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi.tar.xz -P /tmp --progress=bar:force
+RUN tar -C /tmp -xf /tmp/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi.tar.xz
+RUN mv /tmp/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi /opt/gcc-arm-none-eabi
+RUN rm /tmp/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi.tar.xz
 RUN apt-get update -y
 RUN wget https://bootstrap.pypa.io/get-pip.py
 RUN python3 get-pip.py
